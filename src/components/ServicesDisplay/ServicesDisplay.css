@@ -1,0 +1,122 @@
+.services-display {
+  margin-top: 40px;
+  max-width: 89%;
+  margin: 0 auto;
+}
+
+/* .services-display h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #388087;
+} */
+
+.services-display-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 30px;
+}
+.services {
+  min-width: 250px;
+  max-width: 22%;
+  height: 480px;
+  margin: 10px auto;
+  border-radius: 15px;
+  background-color: #badfe2;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+.services:hover {
+  transform: scale(1.1);
+}
+
+/* Styling for image within the services card */
+.services-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Styling for services content and list items */
+.services-content {
+  padding: 10px;
+  height: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #badfe2;
+}
+
+/* Styling for the title within services card */
+.services-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  background-color: #badfe2;
+}
+
+/* Styling for the description within services card */
+.services-desc {
+  color: #676767;
+  font-size: 14px;
+  margin: 0;
+  background-color: #badfe2;
+}
+
+/* Styling for the list within services card */
+.services_list {
+  background: transparent;
+  font-size: 1rem;
+  padding-top: 5px;
+  flex-grow: 1;
+}
+
+.services_list li {
+  background-color: #badfe2;
+  padding-top: 10px;
+  list-style-type: none; /* Remove default list style */
+  position: relative; /* Ensure positioning context for pseudo element */
+  color: black;
+  padding-left: 25px; /* Add padding to the left of the text */
+}
+
+.services_list li::before {
+  content: "\2714"; /* Unicode for checkmark */
+  position: absolute; /* Position relative to the li */
+  left: 0; /* Align to the left of the li */
+  color: black;
+}
+
+/* Styling for the button within services card */
+.services-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #388087;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+.services-button:hover {
+  background-color: #285a5d;
+}
+
+.services-button::after {
+  content: "\1F806"; /* Unicode for arrow */
+  color: white;
+  margin-left: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .services {
+    min-width: 320px;
+  }
+}

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+.header_image {
+  position: relative;
+}
+
+.header_image img {
+  width: 100%;
+  height: 20vh;
+}
+
+.heading_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: transparent;
+  font-size: 4vw; /* Responsive font size */
+  text-align: center; /* Ensure text alignment is centered */
+}
+
+/* Media query for small devices */
+@media (max-width: 600px) {
+  .header_image img {
+    height: 30vh; /* Adjust image height for small devices */
+  }
+
+  .heading_title {
+    font-size: 6vw; /* Increase font size for small devices */
+  }
+}
+
+/* Media query for large devices */
+@media (min-width: 1200px) {
+  .header_image img {
+    height: 30vh; /* Adjust image height for large devices */
+  }
+
+  .heading_title {
+    font-size: 3rem; /* Decrease font size for large devices */
+  }
+}
+
+.ourproject_container {
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.ourProject-item-div {
+  margin: 10px 0px;
+  border-radius: 30px;
+}
+
+.OurP_button {
+  background-color: white;
+  border: 2px solid white;
+  padding: 8px 30px;
+  font-size: 1rem;
+  color: #388087;
+  cursor: pointer;
+  border-radius: 30px; /* Rounded borders */
+  margin: 5px;
+}
+
+.OurP_button.active {
+  background-color: #388087;
+  color: white;
+}
+
+.OurP_button:hover {
+  background-color: #6ba9af;
+  color: white;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+  background-color: #badfe7;
+}
+
+.project-item {
+  background-color: #badfe7;
+  width: 300px;
+  text-align: center;
+  animation: slide-in 1s forwards; /* Apply animation */
+}
+
+.ourP_img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.ourP_title {
+  padding: 15px;
+  text-align: center;
+  background-color: #badfe7;
+  color: #388087;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .OurP_button {
+    padding: 8px 25px;
+  }
+}

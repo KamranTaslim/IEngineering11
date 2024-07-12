@@ -1,0 +1,95 @@
+.carousel {
+  border-radius: 15px;
+  padding-right: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  width: 99%;
+  height: 80vh;
+  max-width: 89%;
+  margin: 100px auto;
+}
+
+.hero-title-img {
+  position: relative;
+}
+
+.hero-title-img h2 {
+  position: absolute;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  top: 40%;
+  text-align: center;
+  left: 10%;
+  color: white;
+  font-size: 3rem;
+  background-color: transparent;
+  z-index: 1;
+  width: 80%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-title-img img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .carousel {
+    height: 70vh;
+    max-width: 90%;
+  }
+
+  .hero-title-img h2 {
+    font-size: 2.5rem;
+    left: 5%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel {
+    height: 60vh;
+    padding-right: 30px;
+    margin: 80px auto;
+  }
+
+  .hero-title-img h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 50vh;
+    padding-right: 20px;
+    margin: 60px auto;
+  }
+
+  .hero-title-img h2 {
+    font-size: 1.8rem;
+    left: 5%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    height: 33vh;
+    padding-right: 10px;
+    margin: 100px auto 30px;
+    width: 88%;
+  }
+
+  .hero-title-img h2 {
+    font-size: 1.5rem;
+    top: 35%;
+  }
+}
+/* Hide next and prev buttons on mobile */
+
+.react-multiple-carousel__arrow--left {
+  display: none;
+}
+.react-multiple-carousel__arrow--right {
+  display: none;
+}

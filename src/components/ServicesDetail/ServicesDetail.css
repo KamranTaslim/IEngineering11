@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+.header_image {
+  position: relative;
+  margin-top: 80px;
+}
+
+.header_image img {
+  width: 100%;
+  height: 40vh;
+}
+
+.heading_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: transparent;
+  font-size: 4vw; /* Responsive font size */
+  text-align: center; /* Ensure text alignment is centered */
+}
+
+/* Media query for small devices */
+@media (max-width: 600px) {
+  .header_image img {
+    height: 30vh; /* Adjust image height for small devices */
+  }
+
+  .heading_title {
+    font-size: 6vw; /* Increase font size for small devices */
+  }
+}
+
+/* Media query for large devices */
+@media (min-width: 1200px) {
+  .header_image img {
+    height: 36vh; /* Adjust image height for large devices */
+  }
+
+  .heading_title {
+    font-size: 4rem; /* Decrease font size for large devices */
+  }
+}
+
+.blog-post {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.blog-post.odd {
+  background-color: #6fb3b8;
+  padding: 35px 0px 35px 0px;
+}
+.image_cotainer {
+  width: 450px;
+  height: 360px;
+  background: transparent;
+}
+.blog-img.odd {
+  background: transparent;
+}
+.blog-img {
+  /* width: 450px;
+  height: 60vh; */
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.detail_container.odd {
+  background: transparent;
+}
+.detail_container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.post-meta {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #646464;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.meta-icon {
+  color: #ff0336;
+  font-size: 16px;
+}
+.post-title.odd {
+  background: transparent;
+}
+.post-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.post-description.odd ul {
+  background: transparent;
+}
+.post-description.odd ul li {
+  background: transparent;
+}
+.post-description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 24px;
+}
+
+.cta-button {
+  font-size: 15px;
+  color: white;
+  background-color: #ff0336;
+  text-align: center;
+  padding-top: 18px;
+  font-weight: 600;
+  width: 20rem;
+  height: 5.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  margin-left: 2px;
+  text-decoration: none;
+  line-height: 5.5rem; /* vertically centers the text */
+}
+
+.cta-icon {
+  color: white;
+}
+.post-description.odd {
+  background: transparent;
+}
+
+.post-description ul {
+  padding-top: 20px; /* Adjust left padding for the list */
+}
+
+.post-description ul li {
+  list-style-type: none; /* Remove default list style */
+  position: relative; /* Ensure positioning context for pseudo element */
+  color: black;
+  margin-bottom: 10px; /* Adjust bottom margin between list items */
+  padding-left: 25px; /* Add padding to the left of the text */
+}
+
+.post-description ul li::before {
+  content: "\2714"; /* Unicode for checkmark */
+  position: absolute; /* Position relative to the li */
+  left: 0; /* Align to the left of the li */
+}
+
+.load_more {
+  bottom: 20px;
+  right: 20px;
+  background-color: #388087;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 15px;
+  font-size: 1rem;
+  margin: 20px 0px 0px 20px;
+  cursor: pointer;
+}
+.load_more:hover {
+  background-color: #285a5d;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .image_cotainer {
+    width: 370px; /* Adjusted width for smaller screens */
+    height: 310px; /* Adjusted height for smaller screens */
+    margin: 0px 20px;
+  }
+
+  .detail_container {
+    margin-top: 20px; /* Add margin top for spacing */
+    width: 77%; /* Adjusted width for smaller screens */
+    text-align: left; /* Ensure text alignment is left on smaller screens */
+  }
+  .post-title {
+    font-size: 1.6rem;
+  }
+  .post-description ul li {
+    font-size: 1.2rem;
+    word-spacing: 2px;
+  }
+}

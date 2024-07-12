@@ -1,0 +1,4 @@
+1. use naviagate 
+2.path service detils
+3.onclick
+4.naviagate path 

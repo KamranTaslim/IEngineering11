@@ -1,0 +1,56 @@
+/* Card.css */
+.carousel_solar_farm {
+  margin-top: 20px;
+  height: 50vh;
+}
+.solar_farm {
+  width: 260px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: #badfe2;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.solar_farm:hover {
+  transform: scale(1.1);
+}
+
+.solar_farm-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.solar_farm_content,
+.solar_farm_title,
+.solar_farm_desc,
+.solar_farm_voltage {
+  background-color: #badfe2;
+  text-align: center;
+  color: #388087;
+}
+
+.solar_farm_content {
+  padding: 20px;
+}
+
+.solar_farm_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.solar_farm_voltage {
+  padding: 10px 0px;
+}
+.solar_farm_desc {
+  color: #676767;
+  font-size: 14px;
+  margin: 0;
+  color: black;
+}

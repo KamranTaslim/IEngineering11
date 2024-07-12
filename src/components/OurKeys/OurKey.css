@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.ourkey {
+  max-width: 89%;
+  margin: 0 auto;
+}
+.main_Ourkey {
+  margin-top: 40px;
+  /* background-color: #388087; */
+  width: 100%;
+  /* border-radius: 30px; */
+  /* display: flex; */
+
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(43, 165, 182, 0.1);
+}
+
+.container_ourkey {
+  min-height: 30vh;
+  /* height: 20vh; */
+  font-family: poppins;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container_ourkey ul {
+  display: flex;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.container_ourkey ul li {
+  font-size: 1.4rem;
+  padding: 1rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #388087;
+  border-radius: 1rem 1rem 0 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  /* transition: color 0.3s ease, transform 0.3s ease; */
+  text-align: center;
+}
+
+.container_ourkey ul li.active {
+  color: #fff; /* Change the color when active */
+  background: linear-gradient(to bottom, #1f4f58, #1b687b, #5195b3, #2e6a74);
+}
+
+.container_ourkey .content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container_ourkey .content .desc {
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1.5rem;
+  line-height: 2.2rem;
+  border-radius: 0 0 1rem 1rem;
+  min-height: 12rem;
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+  word-spacing: 3px;
+}
+
+.container_ourkey .content .desc.active {
+  display: block;
+  /* background-color: #388087; */
+  background: linear-gradient(to bottom, #2e6a74, #288298, #288298, #7fbed5);
+  color: #f6f6f2;
+}
+.tab-image {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}

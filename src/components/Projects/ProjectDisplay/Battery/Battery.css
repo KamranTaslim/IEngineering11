@@ -1,0 +1,56 @@
+/* Card.css */
+.carousel_battery {
+  margin-top: 20px;
+  height: 50vh;
+}
+.battery {
+  width: 260px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: #badfe2;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+.battery:hover {
+  transform: scale(1.1);
+}
+
+.battery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.battery_content,
+.battery_title,
+.battery_desc,
+.battery_voltage {
+  background-color: #badfe2;
+  text-align: center;
+  color: #388087;
+}
+
+.battery_content {
+  padding: 20px;
+}
+
+.battery_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.battery_voltage {
+  padding: 10px 0px;
+}
+.battery_desc {
+  color: #676767;
+  font-size: 14px;
+  margin: 0;
+  color: black;
+}
